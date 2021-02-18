@@ -22,6 +22,7 @@ public class ViaggioPerSingoli extends Viaggio {
         double prezzosingoli=0;
         
         prezzosingoli=x.costo+(x.listagiorni.size()*quotafissagiornaliera);
+        System.out.println(prezzosingoli);
         return prezzosingoli;
         
     }

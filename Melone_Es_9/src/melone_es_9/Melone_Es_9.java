@@ -18,12 +18,29 @@ public class Melone_Es_9 {
      */
     public static void main(String[] args) 
     {
-       Giorno g1=new Giorno(3,"Roma","Terme di Caracalla, Musei capitolini, Catacombe");
-       Giorno g2=new Giorno(4,"Firenze","Santa Maria Novella");
+        Giorno g1=new Giorno(3,"Roma","Terme di Caracalla, Musei capitolini, Catacombe");
+        Giorno g2=new Giorno(4,"Firenze","Santa Maria Novella");
        
-       Vector<Giorno> listagiorni=new Vector<>();
-       listagiorni.addElement(g1);
-       listagiorni.addElement(g2);
+        Vector<Giorno> listagiorni=new Vector<>();
+        listagiorni.addElement(g1);
+        listagiorni.addElement(g2);
+       
+        ViaggioPerSingoli v1=new ViaggioPerSingoli("prova",20);
+        ViaggioPerGruppi v2=new ViaggioPerGruppi("prova2",35);
+       
+       
+        Vector<Viaggio>listaviaggi=new Vector<>();
+        listaviaggi.addElement(v1);
+        listaviaggi.addElement(v2);
+       
+        v1.PrezzoViaggioSingoli(v1);
+       
+       
+       //aggiungere viaggio all'agenzia
+       //AGGIUNTA OK
+       //RIMOZIONE OK
+       
+       
       
 
     }

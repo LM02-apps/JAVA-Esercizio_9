@@ -34,11 +34,12 @@ public class Melone_Es_9 {
         listaviaggi.addElement(v2);
        
         v1.PrezzoViaggioSingoli(v1);
-       
-       
-       //aggiungere viaggio all'agenzia
-       //AGGIUNTA OK
-       //RIMOZIONE OK
+       //LISTA GIORNI VIENE INIZIALIZZATA A 0, RISOLVERE
+       //IL SIZE DI LISTAGIORNI TORNA UN PARAMETRO CORRETTO
+        System.out.println(listagiorni.size());
+        
+       //AGGIUNTA GIORNO E VIAGGIO OK
+       //RIMOZIONE GIORNO E VIAGGIO OK
        
        
       

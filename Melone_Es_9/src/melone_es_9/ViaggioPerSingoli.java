@@ -5,6 +5,8 @@
  */
 package melone_es_9;
 
+import java.util.Vector;
+
 /**
  *
  * @author 4BIA
@@ -15,13 +17,16 @@ public class ViaggioPerSingoli extends Viaggio {
     
    public ViaggioPerSingoli(String titolo, double costo) {
         super(titolo, costo);
+        
     }
     
     public double PrezzoViaggioSingoli(Viaggio x)
     {
         double prezzosingoli=0;
         
-        prezzosingoli=x.costo+(x.listagiorni.size()*quotafissagiornaliera);
+        
+        prezzosingoli=costo+(listagiorni.size()*quotafissagiornaliera);
+        //LISTA GIORNI VIEN INIZIALIZZATA A 0, RISOLVERE
         System.out.println(prezzosingoli);
         return prezzosingoli;
         

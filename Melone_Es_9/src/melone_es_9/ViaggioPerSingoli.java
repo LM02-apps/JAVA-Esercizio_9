@@ -13,24 +13,20 @@ import java.util.Vector;
  */
 public class ViaggioPerSingoli extends Viaggio {
 
-   
-    
-   public ViaggioPerSingoli(String titolo, double costo) {
+    public ViaggioPerSingoli(String titolo, double costo) {
         super(titolo, costo);
-        
+
     }
-    
-    public double PrezzoViaggioSingoli(Viaggio x)
+
+    public double Prezzo() 
+
     {
-        double prezzosingoli=0;
-        
-        
-        prezzosingoli=costo+(listagiorni.size()*quotafissagiornaliera);
+        double prezzosingoli = 0;
+        prezzosingoli = costo + (listagiorni.size() * quotafissagiornaliera);
         //LISTA GIORNI VIEN INIZIALIZZATA A 0, RISOLVERE
-        System.out.println(prezzosingoli);
-        return prezzosingoli;
         
+        return prezzosingoli;
+
     }
-    
-    
+
 }

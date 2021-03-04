@@ -11,13 +11,12 @@ import java.util.Vector;
  *
  * @author 4BIA
  */
-public class Viaggio 
+public abstract class Viaggio 
 {
     public String titolo;
     public double costo;
-    //Vector Giorno= new Vector();
     public Vector<Giorno> listagiorni;
-    static double quotafissagiornaliera=40;
+    static double quotafissagiornaliera=25;
 
     public Viaggio(String titolo, double costo) {
         this.titolo = titolo;
@@ -80,7 +79,8 @@ public class Viaggio
         listagiorni.removeElement(i);
     }
     
-    
+    public abstract double Prezzo();
+
     
     
 }

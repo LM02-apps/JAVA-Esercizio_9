@@ -12,16 +12,17 @@ package melone_es_9;
 public class ViaggioPerGruppi extends Viaggio 
 {
     static double quotagruppo=4;
-
-    public ViaggioPerGruppi(String titolo, double costo) {
+    public int passeggeri;
+    public ViaggioPerGruppi(String titolo, double costo, int passeggeri) {
         super(titolo, costo);
+        this.passeggeri=passeggeri;
     }
     
-        public double PrezzoViaggioGruppi(Viaggio x)
+        public double Prezzo()
     {
         double prezzogruppi=0;
         
-        prezzogruppi=x.costo+(x.listagiorni.size()*quotafissagiornaliera)+quotagruppo;
+        prezzogruppi=costo+(listagiorni.size()*quotafissagiornaliera)+(quotagruppo*passeggeri);
         return prezzogruppi;
         
     }
